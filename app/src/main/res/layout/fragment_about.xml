@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is Cabify?"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="#382AE0"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:layout_marginTop="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cabify is the easiest and safest way to move around your city. We put different types of vehicles at your disposal and we offer you everything you need to enjoy your trip: from a good driver to your own selection of music so that you can enjoy the trip with us. \n\nYou can make immediate requests or reservations through our application."
+            android:textSize="20sp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+
+</FrameLayout>

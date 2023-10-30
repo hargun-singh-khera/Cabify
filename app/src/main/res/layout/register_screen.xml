@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterScreen">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign up"
+                android:textSize="37dp"
+                android:fontFamily="@font/arial_mt_bold"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter your personal information"
+                android:textSize="17dp"
+                android:fontFamily="@font/open_sans_font"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="8dp"
+                android:textColor="#B3000000" />
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="42dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/edit_background"
+                android:drawableStart="@drawable/baseline_person_24"
+                android:drawablePadding="15dp"
+                android:hint="Enter your name"
+                android:inputType="textEmailAddress"
+                android:paddingStart="20dp" />
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/edit_background"
+                android:drawableStart="@drawable/baseline_mail_24"
+                android:drawablePadding="15dp"
+                android:hint="Enter your email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="20dp" />
+
+            <EditText
+                android:id="@+id/mobileEditText"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/edit_background"
+                android:drawableStart="@drawable/baseline_phone_24"
+                android:drawablePadding="15dp"
+                android:hint="Enter mobile number"
+                android:inputType="textEmailAddress"
+                android:paddingStart="20dp" />
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/edit_background"
+                android:drawableStart="@drawable/baseline_lock_24"
+                android:drawablePadding="15dp"
+                android:hint="Enter password"
+                android:inputType="textPassword"
+                android:paddingStart="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Enter confirm password"
+                android:inputType="textPassword"
+                android:paddingStart="20dp"
+                android:background="@drawable/edit_background"
+                android:drawableStart="@drawable/baseline_lock_24"
+                android:drawablePadding="15dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp" />
+
+            <Button
+                android:id="@+id/register_Btn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:cornerRadius="30dp"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/blue"
+                android:layout_marginTop="42dp"
+                android:text="Let's Get Started" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/termsNConditions" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ConfirmRideScreen">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/arial_mt_bold"
+        android:text="Confirm Your Ride Booking"
+        android:textColor="@color/black"
+        android:textSize="29sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardElevation="15dp"
+        android:layout_marginTop="15dp"
+        android:paddingTop="20dp"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/inter_font"
+                        android:text="SELECTED VEHICLE"
+                        android:textColor="#B3000000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/inter_font"
+                        android:text="Hyundai Aura"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="-15dp"
+                    android:src="@drawable/img19" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-28dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹ 800 / km"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/arial_mt_bold"
+                    android:layout_marginTop="-2dp"
+                    android:textColor="@color/blue"
+                    android:layout_marginStart="15dp" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10-15 min"
+                    android:textSize="15sp"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/baseline_access_time_24"
+                    android:fontFamily="@font/open_sans"
+                    android:layout_marginTop="-2dp"
+                    android:textColor="#99000000"
+                    android:layout_marginStart="25dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/changeBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="11dp"
+                        android:background="#00000000"
+                        android:textAllCaps="false"
+                        android:text="Change"
+                        android:textColor="@color/blue" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/inter_font"
+                android:text="PICK UP"
+                android:textColor="#B3000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/pickUpLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:drawableEnd="@drawable/baseline_location_on_24"
+                android:paddingStart="5dp"
+                android:hint="Enter your pick up location" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/inter_font"
+                android:text="DROP OFF"
+                android:layout_marginTop="10dp"
+                android:textColor="#B3000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/dropOffLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:drawableEnd="@drawable/baseline_location_on_24"
+                android:paddingStart="5dp"
+                android:hint="Enter your drop off location" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/inter_font"
+                android:text="PICKUP BY"
+                android:layout_marginTop="10dp"
+                android:textColor="#B3000000"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/dateDialog"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Date"
+                    android:paddingStart="4dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:drawableEnd="@drawable/baseline_calendar_month_24"
+                    android:layout_marginStart="10dp" />
+
+                <EditText
+                    android:id="@+id/timeDialog"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="4dp"
+                    android:hint="Time"
+                    android:focusable="false"
+                    android:drawableEnd="@drawable/baseline_time_24"
+                    android:layout_marginStart="40dp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="15dp"
+                    android:text="GST @18%" />
+
+                <TextView
+                    android:id="@+id/gst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹ 144"
+                    android:textColor="@color/black"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="15dp"
+                    android:text="Total Payable Amount" />
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹ 944"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="15dp" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/confirmBookingBtn"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                app:cornerRadius="30dp"
+                android:textAllCaps="false"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/blue"
+                android:text="Confirm Booking" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

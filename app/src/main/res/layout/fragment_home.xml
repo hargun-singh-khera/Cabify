@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Hi! There"
+               android:textSize="30sp"
+               android:textStyle="bold"
+               android:fontFamily="sans-serif"
+               android:layout_marginTop="15dp"
+               android:textColor="@color/black"
+               android:layout_marginStart="20dp" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Welcome Back"
+               android:textSize="16sp"
+               android:layout_marginStart="20dp"
+               android:layout_marginEnd="10dp"
+               android:textColor="#B3000000" />
+
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="10dp"
+               android:layout_marginTop="15dp"
+               android:layout_marginBottom="15dp"
+               android:layout_marginEnd="10dp"
+               app:cardElevation="15dp"
+               app:cardCornerRadius="10dp"
+               app:cardBackgroundColor="#F8F0E8">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="20dp"
+                   android:layout_marginEnd="20dp"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginBottom="15dp">
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Are you ready for a"
+                           android:textColor="@color/black"
+                           android:textSize="17sp"
+                           android:fontFamily="sans-serif" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="smooth ride?"
+                           android:textSize="27sp"
+                           android:fontFamily="@font/urbanist_font"
+                           android:textStyle="bold"
+                           android:textColor="@color/black"
+                           android:layout_marginTop="-5dp" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="11.5sp"
+                           android:textColor="#AD000000"
+                           android:text="Sit back, relax and enjoy the ride." />
+
+                       <Button
+                           android:id="@+id/rideBtn"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="10dp"
+                           android:text="Ride with Cabify"
+                           app:cornerRadius="8dp"
+                           android:layout_gravity=""
+                           android:textColor="@color/white"
+                           android:textAllCaps="false" />
+                   </LinearLayout>
+
+                   <ImageView
+                       android:layout_width="200dp"
+                       android:layout_height="match_parent"
+                       android:src="@drawable/img21" />
+
+               </LinearLayout>
+           </androidx.cardview.widget.CardView>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Explore Different Categories"
+               android:layout_marginStart="20dp"
+               android:layout_marginEnd="10dp"
+               android:textColor="@color/black"
+               android:fontFamily="@font/urbanist_font"
+               android:textStyle="bold"
+               android:textSize="21sp"
+               android:layout_marginTop="20dp" />
+
+           <HorizontalScrollView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginStart="10dp"
+                   android:layout_marginEnd="50dp"
+                   android:orientation="horizontal">
+
+                   <LinearLayout
+
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="vertical">
+
+                       <androidx.cardview.widget.CardView
+                           android:id="@+id/bikeLayout"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           app:cardCornerRadius="10dp"
+                           android:layout_marginTop="15dp"
+                           app:cardBackgroundColor="#BFE1E6">
+
+                           <RelativeLayout
+                               android:layout_width="125dp"
+                               android:layout_height="wrap_content">
+
+                               <ImageView
+                                   android:id="@+id/imgMotorCycle"
+                                   android:layout_width="130dp"
+                                   android:layout_height="90dp"
+                                   android:paddingBottom="21dp"
+                                   android:layout_marginTop="-2dp"
+                                   android:layout_marginBottom="-10dp"
+                                   android:src="@drawable/img9" />
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_below="@+id/imgMotorCycle"
+                                   android:layout_centerHorizontal="true"
+                                   android:paddingBottom="20dp"
+                                   android:text="Bike" />
+                           </RelativeLayout>
+
+                       </androidx.cardview.widget.CardView>
+
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_marginStart="10dp"
+                       android:orientation="vertical">
+
+                       <androidx.cardview.widget.CardView
+                           android:id="@+id/scootyLayout"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           app:cardCornerRadius="10dp"
+                           android:layout_marginTop="15dp"
+                           app:cardBackgroundColor="#FFCDA9">
+
+                           <RelativeLayout
+                               android:layout_width="125dp"
+                               android:layout_height="wrap_content">
+
+                               <ImageView
+                                   android:id="@+id/imgScooty"
+                                   android:layout_width="130dp"
+                                   android:layout_height="90dp"
+                                   android:paddingBottom="21dp"
+                                   android:layout_marginTop="-2dp"
+                                   android:layout_marginBottom="-10dp"
+                                   android:src="@drawable/img10" />
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_below="@+id/imgScooty"
+                                   android:layout_centerHorizontal="true"
+                                   android:paddingBottom="20dp"
+                                   android:text="Scooty" />
+                           </RelativeLayout>
+
+                       </androidx.cardview.widget.CardView>
+
+                   </LinearLayout>
+                   <LinearLayout
+
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_marginStart="10dp"
+                       android:orientation="vertical">
+
+                       <androidx.cardview.widget.CardView
+                           android:id="@+id/carLayout"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           app:cardCornerRadius="10dp"
+                           android:layout_marginTop="15dp"
+                           app:cardBackgroundColor="#F7EFC4">
+
+                           <RelativeLayout
+                               android:layout_width="125dp"
+                               android:layout_height="wrap_content">
+
+                               <ImageView
+                                   android:id="@+id/imgCar"
+                                   android:layout_width="130dp"
+                                   android:layout_height="90dp"
+                                   android:paddingBottom="21dp"
+                                   android:layout_marginTop="-2dp"
+                                   android:layout_marginBottom="-10dp"
+                                   android:src="@drawable/img8" />
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_below="@+id/imgCar"
+                                   android:layout_centerHorizontal="true"
+                                   android:paddingBottom="20dp"
+                                   android:text="Car" />
+                           </RelativeLayout>
+
+                       </androidx.cardview.widget.CardView>
+
+                   </LinearLayout>
+               </LinearLayout>
+           </HorizontalScrollView>
+
+       </LinearLayout>
+   </ScrollView>
+
+</FrameLayout>
