@@ -13,10 +13,11 @@ import androidx.appcompat.widget.Toolbar
 class RegisterScreen : AppCompatActivity() {
 
     private lateinit var nameEditText: EditText
-    private lateinit var usernameEditText: EditText
+//    private lateinit var usernameEditText: EditText
     private lateinit var passwordEditText: EditText
     private lateinit var mobileEditText: EditText
     private lateinit var emailEditText: EditText
+    private lateinit var confirmPasswordEditText: EditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,6 +27,8 @@ class RegisterScreen : AppCompatActivity() {
         emailEditText = findViewById(R.id.emailEditText)
         passwordEditText = findViewById(R.id.passwordEditText)
         mobileEditText = findViewById(R.id.mobileEditText)
+        confirmPasswordEditText = findViewById(R.id.confirmPasswordEditText)
+
         val loginBtn = findViewById<Button>(R.id.register_Btn)
 
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
@@ -44,11 +47,13 @@ class RegisterScreen : AppCompatActivity() {
             val name = nameEditText.text.toString()
             val email = emailEditText.text.toString()
             val password = passwordEditText.text.toString()
+            val cpassword = confirmPasswordEditText.text.toString()
             val mobile = mobileEditText.text.toString()
 
-            if (name.isNotEmpty() && password.isNotEmpty() && email.isNotEmpty() && mobile.isNotEmpty()) {
-
-                // Create a ContentValues object to insert into the users table
+            if(password != cpassword) {
+                Toast.makeText(this, "Password & Confirm Password doesn't matches.", Toast.LENGTH_SHORT).show()
+            }
+            else if (name.isNotEmpty() && password.isNotEmpty() && email.isNotEmpty() && mobile.isNotEmpty() && cpassword.isNotEmpty()) {
                 val values = ContentValues()
                 values.put("name", name)
                 values.put("email",email)

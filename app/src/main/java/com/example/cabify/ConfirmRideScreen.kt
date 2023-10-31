@@ -63,8 +63,6 @@ class ConfirmRideScreen : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         toolbar.setNavigationOnClickListener {
-//            val intent = Intent(this, CarCategoriesScreen::class.java)
-//            startActivity(intent)
             onBackPressed()
         }
 
@@ -101,8 +99,6 @@ class ConfirmRideScreen : AppCompatActivity() {
         }
 
         changeBtn.setOnClickListener {
-//            val intent = Intent(this, CarCategoriesScreen::class.java)
-//            startActivity(intent)
             onBackPressed()
         }
 

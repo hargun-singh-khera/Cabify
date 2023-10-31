@@ -34,4 +34,9 @@
         android:id="@+id/about"
         android:title="About"
         android:icon="@drawable/ic_info_24" />
+
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        android:icon="@drawable/outline_logout_24" />
 </menu>

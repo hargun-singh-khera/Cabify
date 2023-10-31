@@ -34,7 +34,7 @@ class BikeCategoriesScreen : AppCompatActivity() {
 
         val title = arrayOf("Yamaha R15 V4","Bajaj Pulsar RS 200", "Royal Enfield Hunter")
 
-        val seats = arrayOf("2 seats", "2 seats", "2 seats")
+        val seats = arrayOf("2", "2", "2")
 
         val price = arrayOf("210", "260", "350")
 

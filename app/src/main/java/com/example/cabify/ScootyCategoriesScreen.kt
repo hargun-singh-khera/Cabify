@@ -32,9 +32,9 @@ class ScootyCategoriesScreen : AppCompatActivity() {
             R.drawable.img16
         )
 
-        val title = arrayOf("Sedan", "Sedan", "Sedan")
+        val title = arrayOf("Yamaha Fascino", "Suzuki Burgman", "Honda Dio")
 
-        val seats = arrayOf("2 seats", "2 seats", "2 seats")
+        val seats = arrayOf("2", "2", "2")
 
         val price = arrayOf("210", "150", "50")
 

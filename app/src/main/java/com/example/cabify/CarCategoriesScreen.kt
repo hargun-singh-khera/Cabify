@@ -36,7 +36,7 @@ class CarCategoriesScreen : AppCompatActivity() {
 
         val title = arrayOf("Hyundai Aura","Honda City", "Hyundai Creta", "Toyota Fortuner")
 
-        val seats = arrayOf("4 seats", "4 seats", "4 seats", "4 seats")
+        val seats = arrayOf("5", "5", "5", "7")
 
         val price = arrayOf("350", "480", "520", "780")
 

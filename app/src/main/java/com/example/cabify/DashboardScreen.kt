@@ -58,20 +58,20 @@ class DashboardScreen : AppCompatActivity() {
                     toolbar.setTitle("About Us")
                     replaceFrameWithFragment(AboutFragment())
                 }
+                R.id.logout -> {
+                    exitAlert()
+                }
+
             }
             val drawerLayout = findViewById<DrawerLayout>(R.id.drawerLayout)
             drawerLayout.closeDrawer(GravityCompat.START)
             true
         }
 
-
-
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
 
         bottomNavigationView.background = null
         bottomNavigationView.menu.getItem(2).isEnabled = false
-
-
 
         replaceFrameWithFragment(HomeFragment())
 
@@ -101,6 +101,8 @@ class DashboardScreen : AppCompatActivity() {
         fab.setOnClickListener {
             shareApp()
         }
+
+
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -116,7 +118,7 @@ class DashboardScreen : AppCompatActivity() {
         fragTransaction.commit()
     }
 
-    private fun exitAlert() {
+     fun exitAlert() {
         val builder = AlertDialog.Builder(this)
         builder.setMessage("Are you sure you want to logout ?")
         builder.setTitle("Logout Alert!")

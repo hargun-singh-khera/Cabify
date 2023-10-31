@@ -36,8 +36,6 @@ class OrderSummaryScreen : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         toolbar.setNavigationOnClickListener {
-//            val intent = Intent(this, ConfirmRideScreen::class.java)
-//            startActivity(intent)
             onBackPressed()
         }
 
@@ -61,9 +59,6 @@ class OrderSummaryScreen : AppCompatActivity() {
         val time = intent.getStringExtra("time")
         val pickLocation = intent.getStringExtra("pickUpLocation")
         val dropLocation = intent.getStringExtra("dropOffLocation")
-
-        Toast.makeText(this, "Price: $price", Toast.LENGTH_SHORT).show()
-
 
         vechicleName.text = name
         imgCar.setImageResource(img)
@@ -96,7 +91,6 @@ class OrderSummaryScreen : AppCompatActivity() {
 
         val notificationManager = NotificationManagerCompat.from(this)
         bookMyRide.setOnClickListener {
-            Toast.makeText(this, "Clicked", Toast.LENGTH_SHORT).show()
             notificationManager.notify(notificationId, notification)
         }
 
