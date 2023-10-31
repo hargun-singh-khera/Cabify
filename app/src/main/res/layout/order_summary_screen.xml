@@ -14,425 +14,438 @@
         android:background="?attr/colorPrimary"
         android:elevation="4dp" />
 
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp">
+        android:layout_height="match_parent">
 
-        <View
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0.6dp"
-            android:layout_marginStart="14dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="14dp"
-            android:layout_marginBottom="14dp"
-            android:background="#1E000000" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:padding="4dp"
-            android:background="@color/white"
-            android:textSize="17sp"
-            android:fontFamily="@font/arial_font"
-            android:text="RIDE SUMMARY" />
-    </RelativeLayout>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardElevation="15dp"
-        app:cardCornerRadius="15dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp">
-
-        <ImageView
-            android:id="@+id/imgCar"
-            android:layout_width="match_parent"
-            android:layout_height="170dp"
-            android:src="@drawable/img19" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="155dp"
-            android:layout_marginBottom="10dp">
-
-            <TextView
-                android:id="@+id/vechicleNameLabel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:textSize="17sp"
-                android:textColor="@color/black"
-                android:fontFamily="@font/arial_font"
-                android:textStyle="bold"
-                android:text="Vehicle Name" />
-
-            <TextView
-                android:id="@+id/vechicleName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:layout_alignParentEnd="true"
-                android:fontFamily="@font/arial_font"
-                android:textSize="17sp"
-                android:textColor="@color/black"
-                android:text="Honda City" />
-
-            <View
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="0.6dp"
-                android:layout_below="@+id/vechicleNameLabel"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="5dp"
-                android:background="#1E000000" />
-
-            <TextView
-                android:id="@+id/pickUpLocationLabel"
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:textSize="17sp"
-                android:layout_below="@+id/vechicleNameLabel"
-                android:fontFamily="@font/arial_font"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:text="Pick up location" />
+                android:layout_marginTop="15dp">
 
-            <TextView
-                android:id="@+id/pickUpLocation"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_below="@+id/vechicleNameLabel"
-                android:fontFamily="@font/arial_font"
-                android:layout_alignParentEnd="true"
-                android:textSize="17sp"
-                android:textColor="@color/black"
-                android:text="Road 6, Sector 2, Uttara" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="14dp"
+                    android:layout_marginBottom="14dp"
+                    android:background="#1E000000" />
 
-            <TextView
-                android:id="@+id/pickUpTimeLabel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:textSize="17sp"
-                android:layout_below="@+id/pickUpLocationLabel"
-                android:fontFamily="@font/arial_font"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:text="Pick up time" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="4dp"
+                    android:background="@color/white"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/arial_font"
+                    android:text="RIDE SUMMARY" />
+            </RelativeLayout>
 
-            <TextView
-                android:id="@+id/pickUpTime"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:layout_below="@+id/pickUpLocationLabel"
-                android:fontFamily="@font/arial_font"
-                android:layout_alignParentEnd="true"
-                android:textSize="17sp"
-                android:textColor="@color/black"
-                android:text="7:40 PM" />
-
-            <TextView
-                android:id="@+id/dropOffLocationLabel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:textSize="17sp"
-                android:layout_below="@+id/pickUpTimeLabel"
-                android:fontFamily="@font/arial_font"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:text="Drop off location" />
-
-            <TextView
-                android:id="@+id/dropOffLocation"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:layout_below="@+id/pickUpTimeLabel"
-                android:fontFamily="@font/arial_font"
-                android:layout_alignParentEnd="true"
-                android:textSize="17sp"
-                android:textColor="@color/black"
-                android:text="Road 6, Sector 2, Uttara" />
-
-            <View
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="0.6dp"
-                android:layout_below="@+id/dropOffLocationLabel"
-                android:fontFamily="@font/arial_font"
-                android:background="#1E000000"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content"
+                app:cardElevation="15dp"
+                app:cardCornerRadius="15dp"
                 android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:layout_marginEnd="10dp">
 
-            <TextView
-                android:id="@+id/estDistanceLabel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="10dp"
-                android:textSize="17sp"
-                android:layout_below="@+id/dropOffLocationLabel"
-                android:fontFamily="@font/arial_font"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:text="Estimated Distance" />
+                <ImageView
+                    android:id="@+id/imgCar"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:src="@drawable/img19" />
 
-            <TextView
-                android:id="@+id/estDistance"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_below="@+id/dropOffLocationLabel"
-                android:fontFamily="@font/arial_font"
-                android:layout_alignParentEnd="true"
-                android:textSize="17sp"
-                android:textColor="@color/black"
-                android:text="14 km" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="155dp"
+                    android:layout_marginBottom="10dp">
 
-            <TextView
-                android:id="@+id/estTimeLabel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:textSize="17sp"
-                android:layout_below="@+id/estDistanceLabel"
-                android:fontFamily="@font/arial_font"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:text="Estimated Time" />
+                    <TextView
+                        android:id="@+id/vechicleNameLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:textSize="17sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/arial_font"
+                        android:textStyle="bold"
+                        android:text="Vehicle Name" />
 
-            <TextView
-                android:id="@+id/estTime"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:layout_below="@+id/estDistanceLabel"
-                android:layout_alignParentEnd="true"
-                android:fontFamily="@font/arial_font"
-                android:textSize="17sp"
-                android:textColor="@color/black"
-                android:text="3 hrs" />
+                    <TextView
+                        android:id="@+id/vechicleName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:fontFamily="@font/arial_font"
+                        android:textSize="17sp"
+                        android:textColor="@color/black"
+                        android:text="Honda City" />
 
-            <View
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:layout_below="@+id/vechicleNameLabel"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#1E000000" />
+
+                    <TextView
+                        android:id="@+id/pickUpLocationLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="17sp"
+                        android:layout_below="@+id/vechicleNameLabel"
+                        android:fontFamily="@font/arial_font"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Pick up location" />
+
+                    <TextView
+                        android:id="@+id/pickUpLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_below="@+id/vechicleNameLabel"
+                        android:fontFamily="@font/arial_font"
+                        android:layout_alignParentEnd="true"
+                        android:textSize="17sp"
+                        android:textColor="@color/black"
+                        android:text="Road 6, Sector 2, Uttara" />
+
+                    <TextView
+                        android:id="@+id/pickUpTimeLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:textSize="17sp"
+                        android:layout_below="@+id/pickUpLocationLabel"
+                        android:fontFamily="@font/arial_font"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Pick up time" />
+
+                    <TextView
+                        android:id="@+id/pickUpTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_below="@+id/pickUpLocationLabel"
+                        android:fontFamily="@font/arial_font"
+                        android:layout_alignParentEnd="true"
+                        android:textSize="17sp"
+                        android:textColor="@color/black"
+                        android:text="7:40 PM" />
+
+                    <TextView
+                        android:id="@+id/dropOffLocationLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:textSize="17sp"
+                        android:layout_below="@+id/pickUpTimeLabel"
+                        android:fontFamily="@font/arial_font"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Drop off location" />
+
+                    <TextView
+                        android:id="@+id/dropOffLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_below="@+id/pickUpTimeLabel"
+                        android:fontFamily="@font/arial_font"
+                        android:layout_alignParentEnd="true"
+                        android:textSize="17sp"
+                        android:textColor="@color/black"
+                        android:text="Road 6, Sector 2, Uttara" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:layout_below="@+id/dropOffLocationLabel"
+                        android:fontFamily="@font/arial_font"
+                        android:background="#1E000000"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"/>
+
+                    <TextView
+                        android:id="@+id/estDistanceLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"
+                        android:textSize="17sp"
+                        android:layout_below="@+id/dropOffLocationLabel"
+                        android:fontFamily="@font/arial_font"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Estimated Distance" />
+
+                    <TextView
+                        android:id="@+id/estDistance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_below="@+id/dropOffLocationLabel"
+                        android:fontFamily="@font/arial_font"
+                        android:layout_alignParentEnd="true"
+                        android:textSize="17sp"
+                        android:textColor="@color/black"
+                        android:text="14 km" />
+
+                    <TextView
+                        android:id="@+id/estTimeLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:textSize="17sp"
+                        android:layout_below="@+id/estDistanceLabel"
+                        android:fontFamily="@font/arial_font"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Estimated Time" />
+
+                    <TextView
+                        android:id="@+id/estTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_below="@+id/estDistanceLabel"
+                        android:layout_alignParentEnd="true"
+                        android:fontFamily="@font/arial_font"
+                        android:textSize="17sp"
+                        android:textColor="@color/black"
+                        android:text="3 hrs" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:layout_below="@+id/estTimeLabel"
+                        android:background="#1E000000"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"/>
+
+                    <TextView
+                        android:id="@+id/travelDateLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="17sp"
+                        android:fontFamily="@font/arial_font"
+                        android:layout_below="@+id/estTimeLabel"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Date of Travel" />
+
+                    <TextView
+                        android:id="@+id/travelDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_below="@+id/estTimeLabel"
+                        android:layout_alignParentEnd="true"
+                        android:fontFamily="@font/arial_font"
+                        android:textSize="17sp"
+                        android:textColor="@color/black"
+                        android:text="15/06/2023" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="0.6dp"
-                android:layout_below="@+id/estTimeLabel"
-                android:background="#1E000000"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
-
-            <TextView
-                android:id="@+id/travelDateLabel"
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:textSize="17sp"
-                android:fontFamily="@font/arial_font"
-                android:layout_below="@+id/estTimeLabel"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:text="Date of Travel" />
+                android:layout_marginTop="15dp">
 
-            <TextView
-                android:id="@+id/travelDate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_below="@+id/estTimeLabel"
-                android:layout_alignParentEnd="true"
-                android:fontFamily="@font/arial_font"
-                android:textSize="17sp"
-                android:textColor="@color/black"
-                android:text="15/06/2023" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="14dp"
+                    android:layout_marginBottom="14dp"
+                    android:background="#1E000000" />
 
-        </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="4dp"
+                    android:background="@color/white"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/arial_font"
+                    android:text="BILL SUMMARY" />
+            </RelativeLayout>
 
-
-    </androidx.cardview.widget.CardView>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp">
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginStart="14dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="14dp"
-            android:layout_marginBottom="14dp"
-            android:background="#1E000000" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:padding="4dp"
-            android:background="@color/white"
-            android:textSize="17sp"
-            android:fontFamily="@font/arial_font"
-            android:text="BILL SUMMARY" />
-    </RelativeLayout>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardElevation="15dp"
-        app:cardCornerRadius="15dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp" >
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp">
-
-            <TextView
-                android:id="@+id/subTotalLabel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Subtotal"
-                android:textSize="17sp"
-                android:fontFamily="@font/arial_font"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:layout_marginTop="5dp"
-                android:layout_marginStart="10dp" />
-
-            <TextView
-                android:id="@+id/subTotal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/arial_font"
-                android:text="₹200"
-                android:layout_alignParentEnd="true"
-                android:textSize="17sp"
-                android:textStyle="bold"
-                android:layout_marginTop="5dp"
-                android:textColor="@color/black"
-                android:layout_marginEnd="10dp" />
-
-            <TextView
-                android:id="@+id/gstLabel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="GST @18%"
-                android:drawableStart="@drawable/ic_account_balance_24"
-                android:drawablePadding="5dp"
-                android:fontFamily="@font/arial_font"
-                android:layout_below="@id/subTotalLabel"
-                android:textSize="14sp"
-                android:textColor="@color/black"
-                android:layout_marginTop="3dp"
-                android:layout_marginStart="10dp" />
-
-            <TextView
-                android:id="@+id/gst"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/subTotalLabel"
-                android:text="₹36"
-                android:fontFamily="@font/arial_font"
-                android:layout_alignParentEnd="true"
-                android:textSize="14sp"
-                android:layout_marginTop="3dp"
-                android:textColor="@color/black"
-                android:layout_marginEnd="10dp" />
-
-            <TextView
-                android:id="@+id/platformFeeLabel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Platform fee"
-                android:drawableStart="@drawable/baseline_smartphone_24"
-                android:drawablePadding="5dp"
-                android:fontFamily="@font/arial_font"
-                android:layout_below="@id/gstLabel"
-                android:textSize="14sp"
-                android:textColor="@color/black"
-                android:layout_marginTop="3dp"
-                android:layout_marginStart="10dp" />
-
-            <TextView
-                android:id="@+id/platformFee"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/gstLabel"
-                android:fontFamily="@font/arial_font"
-                android:text="₹ 2.00"
-                android:layout_alignParentEnd="true"
-                android:textSize="14sp"
-                android:layout_marginTop="3dp"
-                android:textColor="@color/black"
-                android:layout_marginEnd="10dp" />
-
-            <View
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="0.6dp"
-                android:layout_below="@+id/platformFeeLabel"
+                android:layout_height="wrap_content"
+                app:cardElevation="15dp"
+                app:cardCornerRadius="15dp"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="5dp"
-                android:background="#1E000000" />
+                android:layout_marginEnd="10dp" >
 
-            <TextView
-                android:id="@+id/grandTotalLabel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Grand Total"
-                android:fontFamily="@font/arial_font"
-                android:layout_below="@id/platformFeeLabel"
-                android:textSize="14sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/subTotalLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Subtotal"
+                        android:textSize="17sp"
+                        android:fontFamily="@font/arial_font"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp" />
+
+                    <TextView
+                        android:id="@+id/subTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/arial_font"
+                        android:text="₹200"
+                        android:layout_alignParentEnd="true"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black"
+                        android:layout_marginEnd="10dp" />
+
+                    <TextView
+                        android:id="@+id/gstLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GST @18%"
+                        android:drawableStart="@drawable/ic_account_balance_24"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="@font/arial_font"
+                        android:layout_below="@id/subTotalLabel"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginStart="10dp" />
+
+                    <TextView
+                        android:id="@+id/gst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/subTotalLabel"
+                        android:text="₹36"
+                        android:fontFamily="@font/arial_font"
+                        android:layout_alignParentEnd="true"
+                        android:textSize="14sp"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/black"
+                        android:layout_marginEnd="10dp" />
+
+                    <TextView
+                        android:id="@+id/platformFeeLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Platform fee"
+                        android:drawableStart="@drawable/baseline_smartphone_24"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="@font/arial_font"
+                        android:layout_below="@id/gstLabel"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginStart="10dp" />
+
+                    <TextView
+                        android:id="@+id/platformFee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/gstLabel"
+                        android:fontFamily="@font/arial_font"
+                        android:text="₹ 2.00"
+                        android:layout_alignParentEnd="true"
+                        android:textSize="14sp"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/black"
+                        android:layout_marginEnd="10dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:layout_below="@+id/platformFeeLabel"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#1E000000" />
+
+                    <TextView
+                        android:id="@+id/grandTotalLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Grand Total"
+                        android:fontFamily="@font/arial_font"
+                        android:layout_below="@id/platformFeeLabel"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp" />
+
+                    <TextView
+                        android:id="@+id/grandTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/platformFeeLabel"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/arial_font"
+                        android:text="₹238"
+                        android:layout_alignParentEnd="true"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:layout_marginEnd="10dp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/bookMyRide"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                app:cornerRadius="30dp"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/blue"
                 android:layout_marginTop="10dp"
-                android:layout_marginStart="10dp" />
+                android:text="Book My Ride" />
+        </LinearLayout>
+    </ScrollView>
 
-            <TextView
-                android:id="@+id/grandTotal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/platformFeeLabel"
-                android:textStyle="bold"
-                android:fontFamily="@font/arial_font"
-                android:text="₹238"
-                android:layout_alignParentEnd="true"
-                android:textSize="14sp"
-                android:layout_marginTop="10dp"
-                android:textColor="@color/black"
-                android:layout_marginEnd="10dp" />
-        </RelativeLayout>
-    </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/bookMyRide"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginEnd="25dp"
-        app:cornerRadius="30dp"
-        android:textAllCaps="false"
-        android:backgroundTint="@color/blue"
-        android:layout_marginTop="10dp"
-        android:text="Book My Ride" />
 
 </LinearLayout>

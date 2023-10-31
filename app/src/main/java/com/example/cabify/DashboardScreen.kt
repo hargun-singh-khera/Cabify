@@ -23,9 +23,6 @@ class DashboardScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.dashboard_screen)
 
-
-
-
         val drawerLayout = findViewById<DrawerLayout>(R.id.drawerLayout)
         val navigationView = findViewById<NavigationView>(R.id.navigationView)
         toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close)
@@ -141,7 +138,7 @@ class DashboardScreen : AppCompatActivity() {
     fun shareApp() {
         val intent = Intent(Intent.ACTION_SEND)
         intent.setType("text/plain")
-        intent.putExtra(Intent.EXTRA_TEXT,"https://drive.google.com/file/d/1PVUgFS6D2HEx4uCizyB2SSgncjNRX2uX/view?usp=share_link")
+        intent.putExtra(Intent.EXTRA_TEXT,"https://drive.google.com/file/d/1eoH8RwKV_TtW6mXETQFhNrBHguD4gqGa/view?usp=sharing")
         startActivity(Intent.createChooser(intent, "Share Link!"))
     }
 }
